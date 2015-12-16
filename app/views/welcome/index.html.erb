@@ -1,13 +1,25 @@
 <div class="container">
 	<div class="row row-centered">
 		<div class="col-sm-4 col-centered">
-			The time is <%= Time.now %> 
+			<h1>Reports</h1>
+			<% @reports.each do |report| %>
+				<br>
+				<p><%= link_to "#{report.title}", report_path(report)%></p>
+			<% end %>
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
-			<%= link_to "Quantopian", "https://www.quantopian.com/algorithms" %>
+			<h1>Algorithms</h1>
+			<br>
+			<%= link_to "Quantopian is Amazing", "https://www.quantopian.com/algorithms" %>
+			<br>
+			<% @algorithms.each do |algo| %>
+				<br>
+				<p><%= link_to "#{algo.name}", algorithm_path(algo) %></p>
+			<% end %>
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
-			For what will it profit a man if he gains the whole world, yet forfeits his soul?
+			<h1>Truth</h1>
+			What good is it for someone to gain the whole world, yet forfeit their soul?
 		</div><!--col-4 col-centered-->
 	</div><!--row row-centered-->
 </div><!--container-->
