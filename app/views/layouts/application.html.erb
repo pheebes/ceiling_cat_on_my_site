@@ -9,9 +9,9 @@
 <div class="row row-centered">
 	<div class="navbar navbar-inverse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">Reports</a></li>
-			<li><a href="#">Algorithms</a></li>
+			<li class="<%= is_active?(root_path)%>"><%= link_to "Home", root_path %></a></li>
+			<li class="<%= is_active?(reports_path)%>"><%= link_to "Reports", reports_path %></li>
+			<li class="<%= is_active?(algorithms_path)%>"><%= link_to "Algorithms", algorithms_path %></a></li>
 		</ul>
 	</div><!--navbar navbar-inverse-->
 </div><!--row-->
