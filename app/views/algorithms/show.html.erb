@@ -15,5 +15,4 @@
   <%= @algorithm.description %>
 </p>
 
-<%= link_to 'Edit', edit_algorithm_path(@algorithm) %> |
-<%= link_to 'Back', algorithms_path %>
+<%= link_to 'Edit', edit_algorithm_path(@algorithm), class: "btn btn-info" %> <%= link_to 'Back', algorithms_path, class: "btn btn-primary" %>

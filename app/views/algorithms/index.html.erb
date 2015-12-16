@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Algorithms</h1>
-
+<br>
+<br>
+<br>
 <table>
   <thead>
     <tr>
@@ -18,9 +20,9 @@
         <td><%= algorithm.name %></td>
         <td><%= algorithm.category %></td>
         <td><%= algorithm.description %></td>
-        <td><%= link_to 'Show', algorithm %></td>
-        <td><%= link_to 'Edit', edit_algorithm_path(algorithm) %></td>
-        <td><%= link_to 'Destroy', algorithm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', algorithm, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_algorithm_path(algorithm), class: "btn btn-info" %></td>
+        <td><%= link_to 'Destroy', algorithm, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Algorithm', new_algorithm_path %>
+<%= link_to 'New Algorithm', new_algorithm_path, class: "btn btn-success" %>
