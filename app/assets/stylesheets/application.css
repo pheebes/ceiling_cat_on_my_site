@@ -27,3 +27,9 @@
 	/* inline-block space fix */
 	margin-right: -4px;
 }
+
+/* Fix lack of padding in first child li element in nav-bar */
+.navbar .navbar-nav li:first-child {
+	padding: 0 0 0 15px;
+}
+
