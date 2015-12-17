@@ -14,8 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$('li').click(function() {
-	$('li.active').removeClass('active');
-	$(this).addClass('active');
-});
