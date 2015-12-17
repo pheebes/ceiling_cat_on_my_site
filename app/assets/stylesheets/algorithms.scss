@@ -2,11 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-th {
-	font-size: 1.3em;
-	padding: 0px 2px 0px 2px;
-}
-
-td {
+.algorithms {
+	th {
+		font-size: 1.3em;
+		padding: 0px 2px 0px 2px;
+	}
+	td {
 	padding: 5px 2px 15px 2px;
+	}
 }

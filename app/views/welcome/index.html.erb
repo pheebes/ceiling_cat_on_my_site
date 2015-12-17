@@ -3,28 +3,31 @@
 		<div class="col-sm-4 col-centered">
 			<h1>Reports</h1>
 			<% @reports.each do |report| %>
-				<br>
 				<p><%= link_to "#{report.title}", report_path(report)%></p>
 			<% end %>
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
 			<h1>Algorithms</h1>
-			<br>
-			<p>
+			<p><%= link_to "Quantopian", "https://www.quantopian.com/home" %> offers users access to a backtesting platform that can be used to test the performace of user generated investment strategies.  The following documents are helpful with learning how to use Quantopian:</p> 
+			<h3>
+				<%= link_to "Api Documents", "https://www.quantopian.com/help" %>
+			</h3> 
+			<h3>
 				<%= link_to "Quantopian Part 1", "http://media.quantopian.com/blog/I.BasicsoftheIDE.pdf" %>
-			</p>
-			<p>
+			</h3>
+			<h3>
 				<%= link_to "Quantopian Part 2", "http://media.quantopian.com/blog/Lesson2set_universeandfetcher.pdf" %>
-			</p>
-			<% @algorithms.each do |algo| %>
-				<br>
-				<p><%= link_to "#{algo.name}", algorithm_path(algo) %></p>
-			<% end %>
+			</h3>
+			<h3>
+				<%= link_to "Quantopian Part 3", "http://media.quantopian.com/blog/Lesson3TheBasicsofFundamentals.pdf" %>
+			</h3>
+			
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
 			<h1>Thoughts</h1>
-			<br>
-			For what does it profit a man to gain the whole world and forfeit his soul?
+			<p>For what does it profit a man to gain the whole world and forfeit his soul?</p>
+			<h3 class="add-line">Favorite Authors</h3>
+			<p><%= link_to "Malcolm Gladwell", "http://gladwell.com/" %></p>
 		</div><!--col-4 col-centered-->
 	</div><!--row row-centered-->
 </div><!--container-->
