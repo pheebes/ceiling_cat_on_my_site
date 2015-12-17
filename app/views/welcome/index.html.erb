@@ -10,15 +10,20 @@
 		<div class="col-sm-4 col-centered">
 			<h1>Algorithms</h1>
 			<br>
-			<%= link_to "Quantopian is Amazing", "https://www.quantopian.com/algorithms" %>
-			<br>
+			<p>
+				<%= link_to "Quantopian Part 1", "http://media.quantopian.com/blog/I.BasicsoftheIDE.pdf" %>
+			</p>
+			<p>
+				<%= link_to "Quantopian Part 2", "http://media.quantopian.com/blog/Lesson2set_universeandfetcher.pdf" %>
+			</p>
 			<% @algorithms.each do |algo| %>
 				<br>
 				<p><%= link_to "#{algo.name}", algorithm_path(algo) %></p>
 			<% end %>
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
-			<h1>Truth</h1>
+			<h1>Thoughts</h1>
+			<br>
 			For what does it profit a man to gain the whole world and forfeit his soul?
 		</div><!--col-4 col-centered-->
 	</div><!--row row-centered-->
