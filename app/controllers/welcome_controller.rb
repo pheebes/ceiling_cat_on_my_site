@@ -6,7 +6,7 @@ class WelcomeController < ApplicationController
 		render :layout => true
 	end
 
-	private
+	protected
 	def set_reports
 		@reports = Report.all
 	end
