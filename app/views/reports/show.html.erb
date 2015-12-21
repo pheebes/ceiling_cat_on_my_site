@@ -1,18 +1,13 @@
 <p id="notice"><%= notice %></p>
-<h1><%= controller.controller_name.titleize %></h1>
-<p>
-  <strong>Author:</strong>
-  <%= @report.author %>
-</p>
+<div class="row-centered">
+	<h1><%= @report.title.titleize %>&nbsp<%= controller.controller_name.titleize.singularize %></h1>
+</div><!--row-centered-->
+
 
 <p>
-  <strong>Title:</strong>
-  <%= @report.title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
   <%= @report.body %>
 </p>
-
+<div class="written-by">
+  <h3>Author: <%= @report.author.titleize %></h3>
+</div>
 <%= link_to 'Edit', edit_report_path(@report), class: "btn btn-info" %> <%= link_to 'Back', reports_path, class: "btn btn-primary" %>

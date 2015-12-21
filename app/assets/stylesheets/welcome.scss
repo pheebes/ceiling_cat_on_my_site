@@ -1,14 +1,8 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.welcome {
-	p, li {
-		/* make paragraphs easier to read */
-		font-size: 1.2em;
-		line-height: 200%;
-		text-align: left;
-	}
 
+.welcome {
 	div.clickable-link {
 		font-size: 1.5em;
 		padding: 2%;

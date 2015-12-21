@@ -1,18 +1,17 @@
 <p id="notice"><%= notice %></p>
-<h1><%= controller.controller_name.titleize %></h1>
+<div class="row-centered">
+<h1><%= @algorithm.name.titleize %>&nbsp<%= controller.controller_name.titleize.singularize %></h1>
+</div><!--row-centered-->
 <p>
-  <strong>Name:</strong>
-  <%= @algorithm.name %>
-</p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @algorithm.category %>
-</p>
+<div>
+	<strong>Category:</strong>
+  	<%= @algorithm.category %>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @algorithm.description %>
-</p>
+<div>
+	<strong>Description:</strong>
+  	<%= @algorithm.description %>
+</div>
 
 <%= link_to 'Edit', edit_algorithm_path(@algorithm), class: "btn btn-info" %> <%= link_to 'Back', algorithms_path, class: "btn btn-primary" %>
