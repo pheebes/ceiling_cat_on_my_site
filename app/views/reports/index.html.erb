@@ -2,28 +2,29 @@
 
 <h1>Listing Reports</h1>
 <br>
-<table>
-  <thead>
-    <tr>
-      <th>Author</th>
-      <th class="add-space">Title</th>
-      <th colspan="2"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @reports.each do |report| %>
+<% unless @reports.empty? %>
+  <table>
+    <thead>
       <tr>
-        <td><%= report.author %></td>
-        <td class="add-space"><%= report.title %></td>
-        <td><%= link_to 'Show', report, class: "btn btn-primary" %></td>
-        <td><%= link_to 'Edit', edit_report_path(report), class: "btn btn-info" %></td>
-        <td><%= link_to 'Destroy', report, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Author</th>
+        <th class="add-space">Title</th>
+        <th colspan="2"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
+    <tbody>
+      <% @reports.each do |report| %>
+        <tr>
+          <td><%= report.author %></td>
+          <td class="add-space"><%= report.title %></td>
+          <td><%= link_to 'Show', report, class: "btn btn-primary" %></td>
+          <td><%= link_to 'Edit', edit_report_path(report), class: "btn btn-info" %></td>
+          <td><%= link_to 'Destroy', report, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
 <br>
 
 <%= link_to 'New Report', new_report_path, class: "btn btn-primary" %>
