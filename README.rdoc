@@ -23,3 +23,6 @@ Things you may want to cover:
 
 == Deploying with Heroku:
 * https://devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup
+
+== Devise Documentation:
+* https://github.com/plataformatec/devise
