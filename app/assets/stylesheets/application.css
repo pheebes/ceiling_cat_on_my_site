@@ -14,7 +14,7 @@
  *= require_self
  */
 
-/********************************* Centered columns *****************************************/
+/********************************* Centered text in columns *********************************/
 .row-centered {
 	text-align: center;
 }
@@ -33,6 +33,7 @@
 /********************************* Target all nav-bar elements ******************************/
 .navbar .navbar-nav li {
 	font-size: 1.5em;
+	text-align: center;
 }
 
 .navbar.navbar-inverse {

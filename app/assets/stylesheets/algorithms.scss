@@ -4,10 +4,22 @@
 
 .algorithms {
 	th {
-		font-size: 1.3em;
-		padding: 0px 2px 0px 2px;
+		font-size: 1.5em;
+		padding: 10px 2px 0px 2px;
 	}
 	td {
-	padding: 5px 2px 15px 2px;
+		font-size: 1.3em;
+		padding: 5px 2px 10px 2px;
+	}
+	.add-space {
+		padding-left: 20px;
+		padding-right: 10px
+	} 
+
+	/********************************* Show Algo Page *******************/
+	div.algo-details {
+		font-size: 1.5em;
+		line-height: 135%;
+		margin: 0 0 15px 0;
 	}
 }

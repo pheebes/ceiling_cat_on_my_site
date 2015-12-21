@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Category</th>
-      <th>Description</th>
+      <th class="add-space">Category</th>
+      <th class="add-space">Description</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +16,8 @@
     <% @algorithms.each do |algorithm| %>
       <tr>
         <td><%= algorithm.name %></td>
-        <td><%= algorithm.category %></td>
-        <td><%= algorithm.description %></td>
+        <td class="add-space"><%= algorithm.category %></td>
+        <td class="add-space"><%= truncate(algorithm.description, :length => 50) %></td>
         <td><%= link_to 'Show', algorithm, class: "btn btn-primary" %></td>
         <td><%= link_to 'Edit', edit_algorithm_path(algorithm), class: "btn btn-info" %></td>
         <td><%= link_to 'Destroy', algorithm, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></td>
