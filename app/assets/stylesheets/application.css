@@ -20,15 +20,70 @@
 }
 
 .col-centered {	
-	
+
 }
 
 /* Fix lack of padding in first child li element in nav-bar */
-.navbar .navbar-nav li:first-child {
-	padding: 0 0 0 15px;
+/* Only apply when nav bar is displayed horizontally >= 768px in size */
+@media (min-width: 768px) {
+	.navbar .navbar-nav li:first-child {
+		padding: 0 0 0 15px;
+	}
 }
 
 /* Target all nav-bar elements */
 .navbar .navbar-nav li {
 	font-size: 1.5em;
 }
+
+.navbar.navbar-inverse {
+	margin-bottom: 0;
+}
+
+/* Header styles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, serif;
+	color: teal;
+	}
+h1, h3.add-line {
+		line-height: 135%;
+		display: inline-block;
+	}
+
+h1:after, .add-line {
+		/* Add line below header */
+		content: ' ';
+		display: block;
+		border-bottom: 2px solid #b3cccc;
+}
+
+h1::first-letter {
+		font-size: 1.5em;
+}
+
+/* change color of bootstrap buttons */
+.btn-primary {
+	background-color: #00b2b3;
+	border-color: #009999;
+}
+.btn-primary:hover {
+	background-color: #009999;
+	border-color: #008080;
+}
+.btn-info {
+	background-color: #00b8e6;
+	border-color: #00a3cc;
+}
+.btn-info:hover {
+	background-color: #00a3cc;
+	border-color: #008fb3;
+}
+.btn-warning {
+	background-color: #ff9933;
+	border-color: #ff8c1a;
+}
+.btn-warning:hover {
+	background-color: #ff8c1a;
+	border-color: #ff8000;
+}
+

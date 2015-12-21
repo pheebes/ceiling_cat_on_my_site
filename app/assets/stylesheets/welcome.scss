@@ -2,19 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .welcome {
-	h1, .add-line {
-		line-height: 150%;
-	}
-	h1:after, .add-line {
-		/* Add line below header */
-		content: ' ';
-		display: block;
-		border-bottom: 2px solid lightgray;
-	}
 	p, li {
 		/* make paragraphs easier to read */
 		font-size: 1.2em;
 		line-height: 200%;
 		text-align: left;
+	}
+
+	div.clickable-link {
+		font-size: 1.5em;
+		padding: 2%;
+		margin: 1%;
 	}
 }
