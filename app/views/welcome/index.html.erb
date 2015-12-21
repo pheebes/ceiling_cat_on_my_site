@@ -2,8 +2,9 @@
 	<div class="row row-centered">
 		<div class="col-sm-4 col-centered">
 			<h1>Reports</h1>
+			<p>Reports on individual stocks and industries:</p>
 			<% @reports.each do |report| %>
-				<div class="clickable-link"><%= link_to "#{report.title}", report_path(report)%></div>
+				<div class="clickable-link"><%= link_to "#{report.title.titleize}", report_path(report)%></div>
 			<% end %>
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
@@ -25,7 +26,7 @@
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
 			<h1>Thoughts</h1>
-			<p>For what does it profit a man to gain the whole world and forfeit his soul?</p>
+			<p class="quote">~For what does it profit a man to gain the whole world and forfeit his soul?</p>
 			<h3 class="add-line">Favorite Authors</h3>
 			<ul>
 			<li><%= link_to "Malcolm Gladwell", "http://gladwell.com/" %></li>
