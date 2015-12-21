@@ -64,6 +64,7 @@ h1::first-letter {
 
 /********************************* Make paragraphs and lists easier to read *****************/
 p, li {
+	font-family: Georgia, serif;
 	font-size: 1.2em;
 	line-height: 180%;
 	text-align: left;
