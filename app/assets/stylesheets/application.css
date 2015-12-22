@@ -15,7 +15,7 @@
  *= require_self
  */
 
-/********************************* Centered text in columns *********************************/
+/********************************* CENTER TEXT IN COLUMNS ***********************************/
 .row-centered {
 	text-align: center;
 	margin-right: 0px;
@@ -23,7 +23,7 @@
 
 .col-centered {	
 }
-
+ 
 /********************************* Fix lack of padding in first child li element in nav-bar */
 /* Only apply when nav bar is displayed horizontally >= 768px in size */
 @media (min-width: 768px) {
@@ -32,7 +32,7 @@
 	}
 }
 
-/********************************* Target all nav-bar elements ******************************/
+/********************************* NAVIVATION STYLES ***************************************/
 .navbar .navbar-nav li {
 	font-size: 1.5em;
 	text-align: center;
@@ -50,7 +50,7 @@ ul.nav.navbar-nav {
 	margin: 0px;
 }
 
-/********************************* Style dropdown navigation *******************************/
+/********************************* NAVIGATION DROPDOWN STYLES *******************************/
 .dropdown-toggle {
 	float: right;
 	color: #9d9d9d;
@@ -97,11 +97,7 @@ ul.nav.navbar-nav {
 	color: #fff;
 }
 
-.dropdown-item.active a:active {
-	background-color: #000;
-}
-
-/********************************* Header styles ********************************************/
+/********************************* HEADER STYLES ********************************************/
 h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, serif;
 	color: #007f80;
@@ -131,7 +127,7 @@ p, li {
 	text-align: left;
 }
 
-/********************************* Change link styles ***************************************/
+/********************************* GENERAL LINK STYLES **************************************/
 a {
 	color: #006080;
 }
@@ -140,8 +136,7 @@ a:hover {
 	text-decoration: none;
 }
 
-/********************************* Footer styles ********************************************/
-
+/********************************* FOOTER STYLES ********************************************/
 .footer {
 	margin-top: 100px;
 	background-color: #000;
@@ -160,7 +155,7 @@ a:hover {
 	}
 }
 
-/********************************* Change color of bootstrap buttons ************************/
+/********************************* REDO BOOTSTRAP BUTTON STYLES *****************************/
 .btn-primary {
 	background-color: #00b2b3;
 	border-color: #009999;
