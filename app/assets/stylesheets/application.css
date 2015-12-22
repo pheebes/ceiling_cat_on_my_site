@@ -13,10 +13,11 @@
  *= require_tree .
  *= require_self
  */
- 
+
 /********************************* Centered text in columns *********************************/
 .row-centered {
 	text-align: center;
+	margin-right: 0px;
 }
 
 .col-centered {	
@@ -38,12 +39,13 @@
 
 .navbar.navbar-inverse {
 	margin-bottom: 0;
+	border-radius: 0 0 0 0;
 }
 /********************************* Fixes display issue where active element extends farther */
 /* to the right than all other elements on page... noticable on smart phone *****************/
 .navbar-inverse .navbar-nav > .active > a {
 	display: inline-block;
-	width: 100%;
+	width: auto;
 }
 
 /********************************* Header styles ********************************************/
