@@ -22,7 +22,7 @@
               <td><%= truncate(algorithm.description, :length => 50) %></td>
             </tr>
             <tr>
-              <td colspan="3"><%= link_to 'Show', algorithm, class: "btn btn-primary" %>
+              <td colspan="3" class="add-space"><%= link_to 'Show', algorithm, class: "btn btn-primary" %>
               <%= link_to 'Edit', edit_algorithm_path(algorithm), class: "btn btn-info" %>
               <%= link_to 'Destroy', algorithm, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
