@@ -1,30 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-sm-12 col-centered">
+    <p id="notice"><%= notice %></p>
 
-<h1>Listing Reports</h1>
-<br>
-<% unless @reports.empty? %>
-  <table>
-    <thead>
-      <tr>
-        <th>Author</th>
-        <th class="add-space">Title</th>
-        <th colspan="2"></th>
-      </tr>
-    </thead>
+    <h1>Listing Reports</h1>
+    <br>
+    <% unless @reports.empty? %>
+      <table>
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Title</th>
+          </tr>
+        </thead>
 
-    <tbody>
-      <% @reports.each do |report| %>
-        <tr>
-          <td><%= report.author %></td>
-          <td class="add-space"><%= report.title %></td>
-          <td><%= link_to 'Show', report, class: "btn btn-primary" %></td>
-          <td><%= link_to 'Edit', edit_report_path(report), class: "btn btn-info" %></td>
-          <td><%= link_to 'Destroy', report, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-<% end %>
-<br>
-
-<%= link_to 'New Report', new_report_path, class: "btn btn-primary" %>
+        <tbody>
+          <% @reports.each do |report| %>
+            <tr>
+              <td><%= report.author %></td>
+              <td><%= report.title %></td>
+            </tr>
+            <tr>
+              <td colspan="2"><%= link_to 'Show', report, class: "btn btn-primary" %>
+              <%= link_to 'Edit', edit_report_path(report), class: "btn btn-info" %>
+              <%= link_to 'Destroy', report, class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    <% end %>
+    <br>
+    <br>
+    <%= link_to 'New Report', new_report_path, class: "btn btn-primary push-right" %>
+  </div><!--col-sm-12 col-centered-->
+</div><!--row-->

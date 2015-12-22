@@ -85,6 +85,26 @@ a {
 	color: #006080;
 }
 
+/********************************* Footer styles ********************************************/
+
+.footer {
+	margin-top: 100px;
+	background-color: #000;
+	background-image: url("mountain-pixabay.png");
+	background-repeat: no-repeat;
+	background-position: center -200px;
+	padding-bottom: 300px;
+}
+
+@media (max-width: 767px) {
+	.footer {
+	margin-top: 30px;
+	background-size: contain;
+	background-position: center;
+	padding-bottom: 60%;
+	}
+}
+
 /********************************* Change color of bootstrap buttons ************************/
 .btn-primary {
 	background-color: #00b2b3;
