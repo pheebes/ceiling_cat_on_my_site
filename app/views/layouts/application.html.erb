@@ -10,10 +10,18 @@
 <div class="row row-centered">
 	<div class="navbar navbar-inverse">
 		<ul class="nav navbar-nav">
-			<li class="<%= is_active?(root_path)%>"><%= link_to "Home", root_path %></a></li>
+			<li class="<%= is_active?(root_path)%>"><%= link_to "Home", root_path %></li>
 			<li class="<%= is_active?(reports_path)%>"><%= link_to "Reports", reports_path %></li>
-			<li class="<%= is_active?(algorithms_path)%>"><%= link_to "Algorithms", algorithms_path %></a></li>
+			<li class="<%= is_active?(algorithms_path)%>"><%= link_to "Algorithms", algorithms_path %></li>
 		</ul>
+		<div class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown">Controls</a>
+			<div class="dropdown-menu dropdown-menu-right">
+				<div class="<%= is_active?(new_user_registration_path)%> dropdown-item"><%= link_to "Sign Up", new_user_registration_path %></div>
+				<div class="<%= is_active?(user_session_path)%> dropdown-item"><%= link_to "Login", user_session_path %></div>
+				<div class="<%= is_active?(destroy_user_session_path)%> dropdown-item"><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></div>
+			</div>
+		</div>
 	</div><!--navbar navbar-inverse-->
 </div><!--row-->
 <body>
