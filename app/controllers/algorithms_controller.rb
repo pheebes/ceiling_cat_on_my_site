@@ -1,6 +1,6 @@
 class AlgorithmsController < ApplicationController
   before_action :set_algorithm, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   
   # GET /algorithms
   # GET /algorithms.json
