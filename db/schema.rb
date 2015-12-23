@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151221173229) do
+ActiveRecord::Schema.define(version: 20151223154706) do
 
   create_table "algorithms", force: :cascade do |t|
     t.string   "name"
@@ -19,7 +19,10 @@ ActiveRecord::Schema.define(version: 20151221173229) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "user_id"
   end
+
+  add_index "algorithms", ["user_id"], name: "index_algorithms_on_user_id"
 
   create_table "reports", force: :cascade do |t|
     t.string   "author"
@@ -27,7 +30,10 @@ ActiveRecord::Schema.define(version: 20151221173229) do
     t.text     "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
+
+  add_index "reports", ["user_id"], name: "index_reports_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
