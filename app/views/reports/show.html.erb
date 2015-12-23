@@ -11,7 +11,7 @@
   <h3>Author: <%= @report.author.titleize %></h3>
 </div>
 
-<% if @report.user == current_user %>
+<% if (current_user && (@report.user == current_user)) %>
 	<%= link_to 'Edit', edit_report_path(@report), class: "btn btn-info" %> 
 <% end %>
 	<%= link_to 'Back', reports_path, class: "btn btn-primary" %>
