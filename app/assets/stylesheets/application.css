@@ -97,6 +97,18 @@ ul.nav.navbar-nav {
 	color: #fff;
 }
 
+@media (max-width: 767px) {
+	.dropdown-toggle {
+		float: none;
+	}
+	div.dropdown {
+		padding: 11px;
+	}
+	.dropdown-menu {
+		margin-top: 0px;
+	}
+}
+
 /********************************* HEADER STYLES ********************************************/
 h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, serif;
