@@ -14,4 +14,7 @@
   	<%= @algorithm.description %>
 </div>
 
-<%= link_to 'Edit', edit_algorithm_path(@algorithm), class: "btn btn-info" %> <%= link_to 'Back', algorithms_path, class: "btn btn-primary" %>
+<% if @algorithm.user == current_user %>
+	<%= link_to 'Edit', edit_algorithm_path(@algorithm), class: "btn btn-info" %> 
+<% end %>
+	<%= link_to 'Back', algorithms_path, class: "btn btn-primary" %>
