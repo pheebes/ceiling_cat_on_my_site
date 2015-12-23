@@ -7,6 +7,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+<!-- Restyle flash messages by adding a class to them -->
+<% flash.each do |key, msg| %>
+	<%= content_tag(:p, notice, class: "notice") if notice %>
+	<%= content_tag(:p, alert, class: "alert") if alert %>
+<% end %>
+
 <div class="row row-centered">
 	<div class="navbar navbar-inverse">
 		<ul class="nav navbar-nav">

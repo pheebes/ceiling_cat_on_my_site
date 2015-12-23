@@ -199,3 +199,38 @@ a:hover {
 		text-align: center
 	}
 }
+
+/********************************* FLASH MESSAGE STYLES ************************************/
+.notice {
+	color: #000;
+	background-color: #66cc00;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+	margin: 5px 25%;
+	border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+	.notice {
+		margin: 5px 1%;
+	}
+}
+
+.alert {
+	color: #000;
+	background-color: #cc9900;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+	margin: 5px 25%;
+	border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+	.alert {
+		margin: 5px 1%;
+	}
+}
