@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151223154706) do
+ActiveRecord::Schema.define(version: 20151224013721) do
 
   create_table "algorithms", force: :cascade do |t|
     t.string   "name"
@@ -23,6 +23,15 @@ ActiveRecord::Schema.define(version: 20151223154706) do
   end
 
   add_index "algorithms", ["user_id"], name: "index_algorithms_on_user_id"
+
+  create_table "daily_logs", force: :cascade do |t|
+    t.string   "title"
+    t.string   "day"
+    t.text     "body"
+    t.integer  "ranking"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "reports", force: :cascade do |t|
     t.string   "author"

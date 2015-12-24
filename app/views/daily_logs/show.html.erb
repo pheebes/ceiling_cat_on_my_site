@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @daily_log.title %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @daily_log.day %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @daily_log.body %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @daily_log.ranking %>
+</p>
+
+<%= link_to 'Edit', edit_daily_log_path(@daily_log) %> |
+<%= link_to 'Back', daily_logs_path %>

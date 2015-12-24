@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :daily_logs
+  resources :daily_logs
   devise_for :users
   resources :algorithms
   resources :reports
