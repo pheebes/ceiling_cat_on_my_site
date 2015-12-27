@@ -2,17 +2,14 @@
 	<div class="row row-centered">
 		<div class="col-sm-4 col-centered">
 			<h1>Reports</h1>
-			<p>Reports on individual securities and industries:</p>
+			<p>&nbsp &nbsp &nbsp Reports on individual securities and industries:</p>
 			<% @reports.each do |report| %>
 				<div class="clickable-link"><%= link_to "#{report.title.titleize}", report_path(report)%></div>
 			<% end %>
 		</div><!--col-4 col-centered-->
 		<div class="col-sm-4 col-centered">
 			<h1>Algorithms</h1>
-			<p><%= link_to "Quantopian", "https://www.quantopian.com/home" %> provides access to a backtesting platform that can be used to test the performance of user generated investment strategies.  The following documents are helpful with learning how to use Quantopian:</p> 
-			<div class="clickable-link">
-				<%= link_to "~Api Documents~", "https://www.quantopian.com/help" %>
-			</div>
+			<p>&nbsp &nbsp &nbsp <%= link_to "Quantopian", "https://www.quantopian.com/home" %> provides access to a backtesting platform that can be used to test the performance of user generated investment strategies.  The following documents are helpful with learning how to use Quantopian:</p>
 			<div class="clickable-link">
 				<%= link_to "Quantopian Part 1", "http://media.quantopian.com/blog/I.BasicsoftheIDE.pdf" %>
 			</div>
@@ -21,6 +18,12 @@
 			</div>
 			<div class="clickable-link">
 				<%= link_to "Quantopian Part 3", "http://media.quantopian.com/blog/Lesson3TheBasicsofFundamentals.pdf" %>
+			</div>
+			<div class="clickable-link">
+				<%= link_to "Creating Robust Algorithms", "https://www.quantopian.com/posts/tips-for-writing-robust-algorithms-for-the-hedge-fund" %>
+			</div>
+			<div class="clickable-link">
+				<%= link_to "~Api Documents~", "https://www.quantopian.com/help" %>
 			</div>
 			
 		</div><!--col-4 col-centered-->
