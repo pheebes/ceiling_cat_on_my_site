@@ -77,7 +77,7 @@ ul.nav.navbar-nav {
 	background-color: #000;
 }
 
-.dropdown-menu > div > a:hover {
+.dropdown-menu > div > a:hover, .navbar-nav > li:hover {
 	background-color: #000;
 }
 
@@ -146,6 +146,10 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+.clickable-link > a:hover {
+	color: blue;
+	background-color: white;
 }
 
 /********************************* FOOTER STYLES ********************************************/
